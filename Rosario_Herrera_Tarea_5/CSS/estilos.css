@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*El margen entero que le da cuerpo a todo*/
+.enfoque{
+    margin:50px;
+    padding: 20px;
+
+}
+
+/*HEADER*/
+.cosas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(255, 194, 68);
+    align-items: center;
+    
+}
+.buscar{
+    display: flex;
+    width: 20%;
+    padding: 10px;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;  
+}
+.empezar{
+    display: flex;
+    padding: 10px;
+    height: 50%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 160, 130);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: -4px;
+}
+
+/*El cuerpo de los carritos TENGO QUE MEJORARLO*/
+
+.semi_cuerpo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -30px;
+    border-bottom: 2px solid rgb(230, 229, 229);;
+
+}
+
+.carrito{
+    margin-right: 10%; 
+
+}
+.carrito p{
+    
+    justify-content: center;
+    width: 150px;
+    height: 900;
+    border-bottom: 4px solid rgb(255, 194, 68);
+    padding-bottom: 20px;
+    z-index: 2;
+    position: absolute
+    
+
+}
+.img-carrito {
+    height: auto;
+    width: 90px;
+     display: flex;
+    justify-content: center;
+    display: flex
+}
+
+/*ASIDE*/
+
+aside {
+    margin-top: 20px;
+    text-align: left; /* Alinea todo el contenido del aside a la izquierda */
+}
+
+.reloj, .reloj_2, .entrega, .conveniencia, .Helado, .Supermercado {
+    display: flex; /* Usa flexbox para alinear elementos dentro de cada div */
+    align-items: center; /* Alinea verticalmente las imágenes y los textos */
+    margin-bottom: 10px; /* Espacio entre cada sección */
+}
+
+.img-card {
+    display: block; /* Asegura que las imágenes sean bloque y puedan alinearse */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+hr {
+    width: 10%; /* Establece el ancho de la línea al 50% del contenedor */
+    margin-left: 0; /* Alinea la línea a la izquierda */
+    border: 1px solid rgb(230, 229, 229); /* Puedes cambiar el estilo de la línea si deseas */
+}
+.ordenar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    display: flex;
+}
+.filtros{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    margin-top: 30px;
+}
+.filtro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    margin-top: 30px;
+}
+
+/*El cuerpo*/
+
+.derecha{
+    margin-left: 20%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: -438px;
+}
+.derecha h1{
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.derecha p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+.cuadros{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -300px;
+    margin-top: 80px;
+}
+
+
+.salmantina{
+    background-image: url(../IMAGENES/imagencarne3.jpg);
+    background-repeat: no-repeat;
+    background-size: 310px 160px;
+    border: 2px solid rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    box-shadow: 10px 5px 5px rgb(185, 185, 185);
+    border-radius: 5%;
+    width: 300px;
+    height: auto;
+}
+
+.debajo_sal{
+    display: flex;
+    margin-top: 60%;
+
+}
+
+.carnes{
+    background-image: url(../IMAGENES/imagencarn2.jpg);
+    background-repeat: no-repeat;
+    background-size: 310px 160px;
+    border: 2px solid rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    box-shadow: 10px 5px 5px rgb(185, 185, 185);
+    border-radius: 5%;
+    width: 300px;
+    height: auto;
+    margin-left: 2%;
+}
+
+.debajo_carne{
+    display: flex;
+    margin-top: 60%;
+
+}
+
+.res{
+    background-image: url(../IMAGENES/imagencarne1.jpg);
+    background-repeat: no-repeat;
+    background-size: 310px 160px;
+    border: 2px solid rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    box-shadow: 10px 5px 5px rgb(185, 185, 185);
+    border-radius: 5%;
+    width: 300px;
+    height: auto;
+    margin-left: 2%;
+
+}
+
+.debajo_res{
+    display: flex;
+    margin-top: 60%;
+} 
+
+
+@media (max-width: 1000px) {
+    .cosas {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .buscar, .empezar {
+      width: 90%;
+      margin: 10px 0;
+    }
+  
+    .semi_cuerpo {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .carrito {
+      margin: 20px 0;
+    }
+  
+    .cuadros {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .salmantina, .carnes, .res {
+      width: 100%;
+      margin: 10px 0;
+      background-size: cover;
+    }
+  
+    aside {
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+    }
+  
+    .reloj, .reloj_2, .entrega, .conveniencia, .Helado, .Supermercado {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

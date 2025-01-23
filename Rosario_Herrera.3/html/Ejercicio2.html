@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+
+
+
+<div class="cuadro">
+
+    <form action="myhome.php" method="post">
+
+        <h1>Mi Hotel - Reserva Online</h1>
+       
+        <strong>
+        <p>Nombre: <input type="text" name="nombre" size="30"></p>
+        <p>Apellidos: <input type="text" name="apellidos" size="30"></p>
+        <p>Teléfono: <input type="text" name="teléfono" size="30"></p>
+        <p>eMail: <input type="text" name="eMail" size="30"></p>
+        <p>Número de coches: <input type="text" name="número de coches" size="30"></p>
+        <p>Fecha de entrada: <input type="date" name="fecha de entrada" size="30"></p>
+        </strong>
+
+        <strong><p>Tipo de habitación:</strong> <br><br>
+            <input type="radio" name="hm" value="h">Simple
+            <input type="radio" name="hm" value="m">Doble
+            <input type="radio" name="hm" value="m">Matrimonio
+        </p>
+       
+        <strong><p>Extras:</strong> <br><br>
+            <input type="checkbox" name="hm" value="h">Desayuno
+            <input type="checkbox" name="hm" value="m">Comida
+            <input type="checkbox" name="hm" value="m">Cena
+            <input type="checkbox" name="hm" value="m">Cama supletoria
+        </p>
+        
+        <strong><p>Comentarios:</p></strong>
+
+
+        <textarea cols="30" rows="10"></textarea>
+        
+
+       
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+        
+    </form>
+</div>    
+</body>
+
+
+</html>
